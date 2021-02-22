@@ -74,7 +74,7 @@ ui <- list(
     skin = "blue",
     ## Header ----
     dashboardHeader(
-      title = "Stat 200 Sampling",
+      title = "STAT 200 Sampling",
       titleWidth = 250
     ),
     ## Sidebar ----
@@ -270,6 +270,5 @@ server <- function(input, output, session) {
   })
 }
 
-
 # Boast App Call ----
-boastUtils::boastApp(ui = ui, server = server)
+boastUtils::boastApp(ui = ui, server = server, config = list("log" = FALSE))
